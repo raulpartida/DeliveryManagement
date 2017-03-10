@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvNER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Entrega: "
+        android:textSize="20dp"
+        /><!--Fijo-->
+    <TextView
+        android:id="@+id/tvNumeroEntregaRuta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/tvNER"
+        android:textColor="@color/colorOlvidaste"
+        /><!--Numero de entrega-->
+    <TextView
+        android:id="@+id/tvClienteEntrega"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cliente: "
+        android:textSize="20dp"
+        android:layout_below="@+id/tvNumeroEntregaRuta"/><!--Fijo-->
+    <TextView
+        android:id="@+id/tvNombreClienteEntrega"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/colorOlvidaste"
+        android:layout_toRightOf="@+id/tvClienteEntrega"
+        android:layout_below="@+id/tvNumeroEntregaRuta"/><!--Nombre del cliente-->
+    <TextView
+        android:id="@+id/tvEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresa el estatus"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tvClienteEntrega"
+        android:textColor="#B40404"/><!--Fijo-->
+
+
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.rulop_000.deliverym.Vista.PerfilActivity">
+
+    <TextView
+        android:id="@+id/tvPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perfil"
+        android:layout_margin="10dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        /><!--Fijo-->
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/delivery_man"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center" /><!--Foto de perfil-->
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Número de empleado:"
+        android:textColor="@color/colorOlvidaste"
+        android:layout_below="@+id/ivLogo"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        /><!--Numero de empleado-->
+    <TextView
+        android:id="@+id/tvIdChofer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/colorOlvidaste"
+        android:layout_below="@+id/ivLogo"
+        android:layout_toRightOf="@+id/tv1"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        /><!--Numero de empleado-->
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Repartidor:"
+        android:textColor="@color/colorOlvidaste"
+        android:layout_below="@+id/tvIdChofer"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        /><!--Nombre empleado-->
+    <TextView
+        android:id="@+id/tvChofer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/colorOlvidaste"
+        android:layout_below="@+id/tv1"
+        android:layout_toRightOf="@+id/tv2"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        /><!--Numero de empleado-->
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numero de Ruta:"
+        android:textColor="@color/colorOlvidaste"
+        android:layout_below="@+id/tvChofer"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        /><!--Numero de ruta-->
+    <TextView
+        android:id="@+id/tvIDRuta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/colorOlvidaste"
+        android:layout_below="@+id/tv2"
+        android:layout_toRightOf="@+id/tv3"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        /><!--Numero de empleado-->
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unidad asignada:"
+        android:textColor="@color/colorOlvidaste"
+        android:layout_below="@+id/tvIDRuta"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        /><!--Numero de vehiculo-->
+    <TextView
+        android:id="@+id/tvCamion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/colorOlvidaste"
+        android:layout_below="@+id/tv3"
+        android:layout_toRightOf="@+id/tv4"
+        android:layout_margin="10dp"
+        android:textSize="20dp"
+        /><!--Numero de empleado-->
+</RelativeLayout>

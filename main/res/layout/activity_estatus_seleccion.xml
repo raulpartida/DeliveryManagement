@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.rulop_000.deliverym.Vista.EstatusSeleccionActivity">
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estatus del pedido"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="#0489B1" />
+    <RadioGroup
+        android:id="@+id/rbMainE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/tv1"
+        >
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completada"
+            android:textSize="20dp"
+            android:layout_below="@+id/tvEstado"/>
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Incompleta"
+            android:textSize="20dp"
+            android:layout_below="@+id/rb1"/>
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mercancia dañada"
+            android:textSize="20dp"
+            android:layout_below="@+id/rb2"/>
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cliente no disponible"
+            android:textSize="20dp"
+            android:layout_below="@+id/rb3"/>
+    </RadioGroup><!--Seleccion de estado-->
+    <Button
+        android:id="@+id/btnFinalizar"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        style="?android:textAppearanceSmall"
+        android:text="Finalizar"
+        android:textStyle="bold"
+        android:background="@color/colorBoton"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/rbMainE"
+        android:layout_centerHorizontal="true" /><!--Finalizar-->
+
+</RelativeLayout>

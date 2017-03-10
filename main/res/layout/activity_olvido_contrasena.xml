@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.rulop_000.deliverym.Vista.OlvidoContrasenaActivity">
+    <TextView
+        android:id="@+id/tvConfiguracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Olvido de Contraseña"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+    <EditText
+        android:id="@+id/etContrasena"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="Usuario"
+        android:inputType="number"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:maxLength="6"
+        android:layout_below="@+id/tvConfiguracion"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:id="@+id/etPalabra"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Palabra Clave"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:maxLength="15"
+        android:layout_below="@+id/etContrasena"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:id="@+id/etNewPassword1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nueva Contraseña"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:maxLength="10"
+        android:layout_below="@+id/etPalabra"
+        android:layout_margin="10dp"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/etNewPassword2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirmar Contraseña"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:singleLine="true"
+        android:layout_below="@+id/etNewPassword1"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        />
+    <Button
+        android:id="@+id/btnAceptarCambioContraseña"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="ACEPTAR"
+        android:textColor="#FFFFFF"
+        style="?android:textAppearanceSmall"
+        android:layout_below="@+id/etNewPassword2"
+        android:background="@color/colorBoton"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

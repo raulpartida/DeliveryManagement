@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBoton">#0040FF</color>
+    <color name="colorOlvidaste">#2A0A0A</color>
+    <color name="cancelar">#DF0101</color>
+    <color name="ruta1">#FF530D</color>
+    <color name="ruta2">#E82C0C</color>
+    <color name="ruta3">#00FF48</color>
+    <color name="ruta4">#1485CC</color>
+    <color name="ruta5">#FFFC19</color>
+    <color name="ruta6">#DF0101</color>
+    <color name="ruta7">#0971B2</color>
+    <color name="ruta8">#66B8D9</color>
+    <color name="ruta9">#F26D3D</color>
+    <color name="ruta10">#CC923D</color>
+</resources>

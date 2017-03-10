@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/calle"
+    tools:context=".Vista.LoginActivity">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/delivery_man"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true" /><!--Logo-->
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Delivery Managment"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_below="@+id/ivLogo"/><!--Fijo-->
+    <EditText
+        android:id="@+id/etUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="No. Usuario"
+        android:textColorHint="#FFFFFF"
+        android:textColor="#FFFFFF"
+        android:inputType="number"
+        android:maxLines="1"
+        android:maxLength="8"
+        android:singleLine="true"
+        android:gravity="center"
+        android:layout_marginTop="220dp"/><!--Usuario-->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:maxLength="10"
+        android:textColorHint="#FFFFFF"
+        android:imeActionId="@+id/login"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_below="@+id/etUsuario"
+        android:layout_margin="10dp"
+        android:gravity="center" /><!--Contraseña-->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:textAppearanceSmall"
+        android:layout_below="@+id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:text="Inicar sesion "
+        android:layout_margin="16dp"
+        android:textStyle="bold"
+        android:background="@color/colorBoton"
+        android:textColor="#FFFFFF"/><!--Iniciar Sesion-->
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/btnRecuperar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Olvidaste tu contraseña?"
+        android:layout_below="@+id/btnLogin"
+        android:layout_centerHorizontal="true"
+
+        android:textColor="@color/colorOlvidaste"/><!--Iniciar Sesion-->
+    <TextView
+        android:id="@+id/tvCopyrigth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Copyrigth Raul Partida"
+        android:layout_below="@+id/btnRecuperar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        /><!--Fijo-->
+</RelativeLayout>

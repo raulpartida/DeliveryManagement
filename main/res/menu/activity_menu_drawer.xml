@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_direcciones"
+            android:title="Pedidos" />
+        <item
+            android:id="@+id/nav_registro_entregas"
+            android:title="Registro de Entregas" />
+        <item
+            android:id="@+id/nav_cliente"
+            android:title="Añadir Cliente" />
+        <item
+            android:id="@+id/nav_perfil"
+            android:title="Perfil" />
+        <item
+            android:id="@+id/nav_configuracion"
+            android:title="Configuración" />
+        <item
+            android:id="@+id/nav_sesion"
+            android:title="Cerrar Sesión" />
+    </group>
+
+    <!--<item android:title="Cuenta">
+        <menu>
+
+
+        </menu>
+    </item>-->
+
+</menu>
